@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PgOwnerLogin"
+    android:background="@color/LightPink">
+
+    <ImageView
+        android:id="@+id/pg_owner_bg_reg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_door_6"
+        android:layout_marginBottom="200dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/pg_owner_bg_reg_image"
+        android:layout_marginBottom="-100dp"
+        android:background="@drawable/pg_owner_log_image_bg" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/owner_name"
+        android:id="@+id/pg_owner_log_name"
+        android:layout_above="@+id/pg_owner_log_email"
+        android:background="@drawable/pg_owner_log_edt_txt_bg"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:textColorHint="@color/DarkPink"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/owner_email"
+        android:id="@+id/pg_owner_log_email"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pg_owner_log_edt_txt_bg"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:textColorHint="@color/DarkPink"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_password"
+        android:id="@+id/pg_owner_log_password"
+        android:layout_below="@id/pg_owner_log_email"
+        android:background="@drawable/pg_owner_log_edt_txt_bg"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:textColorHint="@color/DarkPink"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/pg_owner_reg_btn"
+        android:layout_below="@+id/pg_owner_log_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/pg_owner_reg_btn_bg"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_registered_tap_here"
+        android:textColor="@color/DarkBlue"
+        android:layout_below="@+id/pg_owner_log_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+
+</RelativeLayout>
